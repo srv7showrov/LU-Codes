@@ -1,16 +1,16 @@
 
+
 #include<stdio.h>
-int main (){
+int main () {
     int i=1;
 
     again:
-    printf("%d ", i);
+    printf("%d ", i); 
+    
     i++;
     if(i<=5)
     {
         goto again;
     }
-
     return 0;
 }
-

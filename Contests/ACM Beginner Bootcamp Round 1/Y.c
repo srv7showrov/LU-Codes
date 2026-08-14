@@ -1,0 +1,39 @@
+
+
+#include<stdio.h>
+int main (){
+    int t;
+    scanf("%d", &t);
+
+    for(int i=1; i<=t; i++)
+    {
+        int a, b, c;
+        scanf("%d %d %d", &a, &b, &c);
+
+        if(a>50 && b<0.7 && c>5600)
+        {
+            printf("10\n");
+        }
+        else if(a>50 && b<0.7)
+        {
+            printf("9\n");
+        }
+        else if(b<0.7 && c>5600)
+        {
+            printf("8\n");
+        }
+        else if(a>50 && c>5600)
+        {
+            printf("7\n");
+        }
+        else if(a>50 || b<0.7 || c>5600)
+        {
+            printf("6\n");
+        }
+        else
+        {
+            printf("5\n");
+        }
+    }
+    return 0;
+}
